@@ -1,0 +1,70 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class pauseMenu : MonoBehaviour
+{
+    public GameObject settingsPanel;
+    public GameObject pausePanel;
+
+    private bool isPaused = false;
+
+    void Start()
+    {
+        settingsPanel.SetActive(false);
+        pausePanel.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    void Update()
+    {
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+        Time.timeScale = 0;
+        pausePanel.SetActive(true);
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
+        Time.timeScale = 1;
+        pausePanel.SetActive(false);
+        settingsPanel.SetActive(false);
+    }
+
+    public void Retry()
+    {
+        Time.timeScale = 1; 
+        SceneManager.LoadScene("scene_nabil");
+    }
+
+    public void Settings()
+    {
+        settingsPanel.SetActive(true);
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("mainmenu");
+    }
+
+    public void Back()
+    {
+        settingsPanel.SetActive(false);
+    }
+}
