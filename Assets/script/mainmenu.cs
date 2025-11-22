@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("scene_nabil");
+        SceneManager.LoadScene("SampleScene");
     }
     
     public void settings()

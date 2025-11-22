@@ -3,9 +3,10 @@ using UnityEngine;
 public class SimpleJump2D : MonoBehaviour
 {
     public float jumpForce = 8f;
-    
-    
-    
+    private Animator anim;
+
+
+
 
     private Rigidbody2D rb;
     [SerializeField] private bool isGrounded = false;
@@ -13,18 +14,22 @@ public class SimpleJump2D : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+
     }
 
     void Update()
     {
         // cek tanah
-        
+
 
         // lompat
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            anim.SetTrigger("Jump");
         }
+
     }
 
 
