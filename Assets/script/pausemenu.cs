@@ -55,16 +55,18 @@ public class pauseMenu : MonoBehaviour
     public void Settings()
     {
         settingsPanel.SetActive(true);
+        pausePanel.SetActive(false );
     }
 
     public void MainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("mainmenu");
+        SceneManager.LoadScene("main_menu");
     }
 
     public void Back()
     {
         settingsPanel.SetActive(false);
+        pausePanel.SetActive(true );
     }
 }
