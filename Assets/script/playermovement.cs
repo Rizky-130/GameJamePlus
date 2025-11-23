@@ -70,7 +70,7 @@ public class SimpleJump2D : MonoBehaviour
 
     IEnumerator WaitGameOver()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         Gameover();
     }
 
