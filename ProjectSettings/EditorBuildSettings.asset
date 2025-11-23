@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main_menu.unity
     guid: b0da57110bb611d4e885322359fb2d4f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/scene_nabil.unity
     guid: 2c49e7c5b348c1042a0e829ce6f32e69
+  - enabled: 1
+    path: Assets/Scenes/game_over.unity
+    guid: 97e3c91f0a1144c45ac0d5709c4c184a
   m_configObjects: {}
