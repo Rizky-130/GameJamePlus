@@ -14,7 +14,7 @@ public class ParallaxBackground : MonoBehaviour
     private float[] width;
     private Vector3[] startPos;
 
-
+    public DifficultyManager diff;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,16 +32,19 @@ public class ParallaxBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-for (int i = 0; i < layer.Length; i++)
-{
-    moveLayer(i);
-}
+        for (int i = 0; i < layer.Length; i++)
+        {
+            moveLayer(i);
+        }
     }
 
     void moveLayer(int i)
     {
-         layer[i].left.Translate(Vector3.left * layer[i].speed * Time.deltaTime);
-        layer[i].right.Translate(Vector3.left * layer[i].speed * Time.deltaTime);
+
+        float dynamicSpeed = layer[i].speed * diff.currentSpeed;
+
+        layer[i].left.Translate(Vector3.left * dynamicSpeed * Time.deltaTime);
+        layer[i].right.Translate(Vector3.left * dynamicSpeed * Time.deltaTime);
 
         // Reset jika melewati kiri layar
         if (layer[i].left.position.x < startPos[i].x - width[i])
