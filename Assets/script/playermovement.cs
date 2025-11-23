@@ -9,8 +9,8 @@ public class SimpleJump2D : MonoBehaviour
     private Animator anim;
     public AudioSource jumpSound;
     public AudioSource damageSound;
-    [SerializeField] private int health = 2;
-    public TMP_Text healthText;
+    [SerializeField] private int health = 1;
+    
     private Rigidbody2D rb;
    
     [SerializeField] private bool isGrounded = false;
@@ -36,7 +36,7 @@ public class SimpleJump2D : MonoBehaviour
             StartCoroutine(WaitGameOver());
         }
 
-        healthText.text = "Nyawa sisa " + health +"x";
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other)
