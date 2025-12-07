@@ -8,6 +8,8 @@ public class SimpleJump2D : MonoBehaviour
     public float jumpForce = 8f;
     private Animator anim;
     public AudioSource jumpSound;
+    public int maxjump = 2;
+    [SerializeField] private int currentjump = 0;   
     public AudioSource damageSound;
     [SerializeField] private int health = 1;
     
@@ -24,11 +26,18 @@ public class SimpleJump2D : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && health > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && health > 0)
         {
-            jumpSound.Play();
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            anim.SetBool("Jump", true);
+            if (currentjump < maxjump)
+            {
+                jumping();
+
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && health > 0)
+        {
+            crouch();
         }
 
         if (health <= 0)
@@ -45,6 +54,7 @@ public class SimpleJump2D : MonoBehaviour
         {
             isGrounded = true;
             anim.SetBool("Jump", false);
+            currentjump = 0;
         }
     }
 
@@ -53,6 +63,7 @@ public class SimpleJump2D : MonoBehaviour
         if (other.gameObject.CompareTag("ground"))
         {
             isGrounded = false;
+            
         }
     }
 
@@ -77,5 +88,18 @@ public class SimpleJump2D : MonoBehaviour
     public void Gameover()
     {
         SceneManager.LoadScene("game_over");
+    }
+
+    public void jumping()
+    {
+        currentjump += 1;
+        jumpSound.Play();
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        anim.SetBool("Jump", true);
+    }
+
+    public void crouch()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, -jumpForce);
     }
 }
