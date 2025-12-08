@@ -12,7 +12,8 @@ public class SimpleJump2D : MonoBehaviour
     [SerializeField] private int currentjump = 0;   
     public AudioSource damageSound;
     [SerializeField] private int health = 1;
-    
+    public Collider2D colstand;
+    public Collider2D coldown;
     private Rigidbody2D rb;
    
     [SerializeField] private bool isGrounded = false;
@@ -21,6 +22,7 @@ public class SimpleJump2D : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        coldown.enabled = false;
        
     }
 
@@ -85,6 +87,13 @@ public class SimpleJump2D : MonoBehaviour
         Gameover();
     }
 
+    IEnumerator crouchtime()
+    {
+        yield return new WaitForSeconds(0.5f);
+        coldown.enabled = false;
+        colstand.enabled = true;
+    }
+   
     public void Gameover()
     {
         SceneManager.LoadScene("game_over");
@@ -100,6 +109,11 @@ public class SimpleJump2D : MonoBehaviour
 
     public void crouch()
     {
+        jumpSound.Play();
         rb.velocity = new Vector2(rb.velocity.x, -jumpForce);
+        anim.SetTrigger("Crouch");
+        colstand.enabled = false;
+        coldown.enabled = true;
+        StartCoroutine(crouchtime());
     }
 }

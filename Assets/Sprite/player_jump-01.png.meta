@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44143d7d7d864f348a216d5bc60d7293
+guid: b81358b1f5379934da4474b78b73d1f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,207 +93,131 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wave_sprite_0
+      name: player_jump-01_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1530
-        height: 558
+        width: 846
+        height: 759
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 250, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 125a30bd8bc2b7f46bee3673bc15a75c
-      internalID: -140194256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave_sprite_1
-      rect:
-        serializedVersion: 2
-        x: 1530
-        y: 0
-        width: 1530
-        height: 558
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f617a8cb6bc36f44a8dd7d894ecd8b90
-      internalID: -1655059013
+      spriteID: ba3fc87aac33d35439a8cac77b4d383d
+      internalID: -2031734595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wave_sprite_2
+      name: player_jump-01_1
       rect:
         serializedVersion: 2
-        x: 3060
+        x: 846
         y: 0
-        width: 1530
-        height: 558
+        width: 846
+        height: 759
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 069cff32e65b1f24bafb929291a4e0eb
-      internalID: -1885678496
+      spriteID: 1f383acbf4172b34fa2567baad65e38c
+      internalID: -378086405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wave_sprite_3
+      name: player_jump-01_2
       rect:
         serializedVersion: 2
-        x: 4590
+        x: 1692
         y: 0
-        width: 1530
-        height: 558
+        width: 846
+        height: 759
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c21841349cdda044a81bfdad51d6ba60
-      internalID: 1177403818
+      spriteID: d9efcacdaf34b0949bf4705da2abc7cd
+      internalID: -1461377748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wave_sprite_4
+      name: player_jump-01_3
       rect:
         serializedVersion: 2
-        x: 6120
+        x: 2538
         y: 0
-        width: 1530
-        height: 558
+        width: 846
+        height: 759
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4ef5935592a544429c7dec80fff4cf1
-      internalID: 167909985
+      spriteID: 806163c6d75373b49a5214980de74fb9
+      internalID: -1581250040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wave_sprite_5
+      name: player_jump-01_4
       rect:
         serializedVersion: 2
-        x: 7650
+        x: 3384
         y: 0
-        width: 1530
-        height: 558
+        width: 846
+        height: 759
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b14b84dd13a8a5447a270e9f16bba4d3
-      internalID: -1647983844
+      spriteID: bb129a8c0576ccd4f8a1e58d87083963
+      internalID: 896045956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wave_sprite_6
+      name: player_jump-01_5
       rect:
         serializedVersion: 2
-        x: 9180
+        x: 4230
         y: 0
-        width: 1530
-        height: 558
+        width: 846
+        height: 759
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a13e90371fd04ba4497b8adf8b265746
-      internalID: -1905168625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave_sprite_7
-      rect:
-        serializedVersion: 2
-        x: 10710
-        y: 0
-        width: 1530
-        height: 558
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88f472c233973f542851beacd7ed631e
-      internalID: -1103028092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wave_sprite_8
-      rect:
-        serializedVersion: 2
-        x: 12240
-        y: 0
-        width: 1530
-        height: 558
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65da1ee8cb92cfe40b592732196fa72b
-      internalID: -891345965
+      spriteID: d21b1f4b38fe2ab4dafdb3594fb5543b
+      internalID: -553444393
       vertices: []
       indices: 
       edges: []
@@ -309,15 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wave_sprite_0: -140194256
-      wave_sprite_1: -1655059013
-      wave_sprite_2: -1885678496
-      wave_sprite_3: 1177403818
-      wave_sprite_4: 167909985
-      wave_sprite_5: -1647983844
-      wave_sprite_6: -1905168625
-      wave_sprite_7: -1103028092
-      wave_sprite_8: -891345965
+      player_jump-01_0: -2031734595
+      player_jump-01_1: -378086405
+      player_jump-01_2: -1461377748
+      player_jump-01_3: -1581250040
+      player_jump-01_4: 896045956
+      player_jump-01_5: -553444393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

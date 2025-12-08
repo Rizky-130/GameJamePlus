@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2d5dfe5d811cad4689aeba5c916a921
+guid: 2e919850e598db44c8e98cba7fcfb6b6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,30 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trash_obstacle_0
+      name: player_crouch_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 362.66666
-        height: 288
+        width: 846
+        height: 759
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd8c3a8ceac27b4b92e282c5286e57b
-      internalID: -1213902880
+      spriteID: 39026887fdb767e43b090e025da4a4a9
+      internalID: -650517206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trash_obstacle_1
+      name: player_crouch_1
       rect:
         serializedVersion: 2
-        x: 362
+        x: 846
         y: 0
-        width: 362.66666
-        height: 288
+        width: 846
+        height: 759
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca1805d0b58301a4c8968f0cb20c0bbd
-      internalID: -2034402336
+      spriteID: 9becd00b28be1a74ab2e1146762184b7
+      internalID: -1875794966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trash_obstacle_2
+      name: player_crouch_2
       rect:
         serializedVersion: 2
-        x: 724
+        x: 1692
         y: 0
-        width: 362.66666
-        height: 288
+        width: 846
+        height: 759
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +153,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f0fa4b7f21ff7142be8b52a8ba5bed6
-      internalID: 156554460
+      spriteID: a287dca960fdd24438dbd27068f071a1
+      internalID: 735826285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_crouch_3
+      rect:
+        serializedVersion: 2
+        x: 2538
+        y: 0
+        width: 846
+        height: 759
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a06eeab07e2c3408194d27aac2002d
+      internalID: -745880197
       vertices: []
       indices: 
       edges: []
@@ -183,9 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      trash_obstacle_0: -1213902880
-      trash_obstacle_1: -2034402336
-      trash_obstacle_2: 156554460
+      player_crouch_0: -650517206
+      player_crouch_1: -1875794966
+      player_crouch_2: 735826285
+      player_crouch_3: -745880197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
