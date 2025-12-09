@@ -105,6 +105,7 @@ public class SimpleJump2D : MonoBehaviour
         jumpSound.Play();
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         anim.SetBool("Jump", true);
+        Debug.Log("jump");
     }
 
     public void crouch()
