@@ -40,6 +40,7 @@ public class ObstacleSpawnManager : MonoBehaviour
     void SpawnObstacle()
     {
         Vector3 spawnPos = player.position + Vector3.right * spawnDistance;
+        spawnPos.y = -3;
         int randomIndex = Random.Range(0, obstacle.Length);
         Instantiate(obstacle[randomIndex], spawnPos, Quaternion.identity);
     }

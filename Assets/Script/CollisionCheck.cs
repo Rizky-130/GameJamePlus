@@ -25,7 +25,7 @@ public class CollisionCheck : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            diff.playerHit();
+            
         }
     }
 }
