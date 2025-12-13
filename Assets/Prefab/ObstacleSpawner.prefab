@@ -48,5 +48,6 @@ MonoBehaviour:
   - {fileID: 711189581710883424, guid: 14ccb025f015f864c8ddbff46cd99e2f, type: 3}
   - {fileID: 2196239592215999040, guid: 0320d88d907dce4498a3074e21a39623, type: 3}
   - {fileID: 5212212296069110006, guid: b8abcc2d240bd444bb38d7c05f01dbe7, type: 3}
+  nyiroroATK: {fileID: 0}
   spawnDistance: 20
   diff: {fileID: 0}
