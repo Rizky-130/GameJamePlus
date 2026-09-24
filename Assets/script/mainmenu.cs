@@ -15,6 +15,18 @@ public class MainMenu : MonoBehaviour
         htpPanel.SetActive(false);  
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // cek apakah ada panel yang lagi aktif
+            if (settingsPanel.activeSelf || creditPanel.activeSelf || htpPanel.activeSelf)
+            {
+                back();
+            }
+        }
+    }
+
     public void Play()
     {
         SceneManager.LoadScene("SampleScene");
